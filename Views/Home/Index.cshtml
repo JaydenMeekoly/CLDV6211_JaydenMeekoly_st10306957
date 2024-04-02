@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <style>
+        header{
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        body{
+            font:Arial;
+        }
+
+        .container {
+            white-space: nowrap;
+        }
+        
+
+        .product {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .image-container {
+            position: relative;
+        }
+
+            .image-container img {
+                display: block;
+                
+            }
+
+            .image-container p {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 10px;
+                margin: 0;
+            }
+
+
+
+    </style>
+    <body>
+        <header><h1 class="display-4">Welcome to KhumaloCraft Emporium</h1></header>
+            <p1> Here at KhumaluCraft Emporium we aim to sell Excellent Handcrafted items from artisans.</p1>
+
+        <div><h2>These are some of Our Products</h2></div>
+        <div class="container">
+            <div class="product">
+                
+                <div class="image-container">
+                    <img src="/Images/Handmade.png" alt="Product 1" width="400" height="300">
+                    <p>Handcrafted Necklace</p>
+                </div>
+            </div>
+            <div class="product">
+                
+                <div class="image-container">
+                    <img src="/Images/Handmade2.jpg" alt="Product 2" width="400" height="300">
+                    <p>Handcrafted bracelet</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+    </body>
+</div>
+    
