@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<style>
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<div class="text-center">
+    <header><h1>@ViewData["Title"]</h1></header>
+
+    <body>
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <p>Please enter your first name, surname and email:</p>
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="surname" placeholder="Surname" required>
+            <input type="text" name="email" placeholder="example@gmail.com" required>
+            <button type="submit">Submit</button>
+        </form>
+         <p>If you don't have an account <a href="https://localhost:7231/User/About">Sign Up</a> for a new account.</p> 
+        
+    </body>
+</div>

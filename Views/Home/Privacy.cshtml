@@ -1,6 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Login";
 }
-<h1>@ViewData["Title"]</h1>
+@* <h1>@ViewData["Title"]</h1> *@
 
-<p>Use this page to detail your site's privacy policy.</p>
+@* <div class="text-center">
+    <h1 class="display-4">Login</h1>
+    <p>If you don't have an account <a href="https://localhost:7277/User/About">Sign Up</a> for a new account.</p>
+</div> *@
+
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+<body>
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <p>Please enter your first name, surname and email:</p>
+        <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="surname" placeholder="Surname" required>
+        <input type="text" name="email" placeholder="example@gmail.com" required>
+        <button type="submit">Submit</button>
+    </form>
+        <p>If you don't have an account <a href="https://localhost:7277/Users/About">Sign Up</a> for a new account.</p>
+</body>
+</div>

@@ -2,27 +2,72 @@
 @{
     ViewData["Title"] = "ContactUs";
 }
-<style>
-.centerContainer {
-    text-align: center;
-}
 
-.centerContainer h1 {
-    margin-bottom: 20px; 
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
 
-<div class="centerContainer">
-    <h1>ContactUs</h1>
-    <img src="/Images/ContactUs.jpg" height= "300" width="600" >
-</div>
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
 
+        .centerContainer {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+            .centerContainer img {
+                margin: 10px;
+                border-radius: 5px;
+            }
+
+        .platforms img {
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+            .platforms img:hover {
+                transform: scale(1.1);
+            }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+    </style>
+</head>
 <body>
+    <header>
+        <h1>ContactUs</h1>
+    </header>
+
     <div class="centerContainer">
-    <h2>You are able to contact us via these platforms</h2>
-    <img src="/Images/Platform1.png" height="150" width="150">
-    <img src="/Images/Platform2.jpg" height="150" width="250">
-    <img src="/Images/Platform3.png" height="150" width="150">
-    <img src="/Images/Platform4.png" height="150" width="250">
+        <img src="/Images/ContactUs.jpg" alt="Contact Us Image" height="300" width="600">
+        <h2>You are able to contact us via these platforms</h2>
+        <div class="platforms">
+            <img src="/Images/Platform1.png" alt="Platform 1" height="150" width="150">
+            <img src="/Images/Platform2.jpg" alt="Platform 2" height="150" width="250">
+            <img src="/Images/Platform3.png" alt="Platform 3" height="150" width="150">
+            <img src="/Images/Platform4.png" alt="Platform 4" height="150" width="250">
+        </div>
     </div>
 </body>
+</html>

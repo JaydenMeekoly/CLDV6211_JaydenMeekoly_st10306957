@@ -3,10 +3,119 @@
     ViewData["Title"] = "MyWork";
 }
 
-<h1>MyWork</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+            form p {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            form input {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            form button {
+                padding: 10px 20px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+                form button:hover {
+                    background-color: #555;
+                }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .product-image {
+            flex: 1;
+        }
+
+            .product-image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+        .product-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+            .product-info h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .product-info p {
+                margin: 5px 0;
+            }
+
+        .product-price {
+            font-size: 20px;
+            color: #e60000;
+        }
+    </style>
+</head>
 <body>
-    <h2>These are some of our products</h2>
+    <header>
+        <h1>MyWork</h1>
+    </header>
+
+    <form action="/Product/MyWork" method="post">
+        <p>Insert new products</p>
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="text" name="Price" placeholder="Price: R" required>
+        <input type="text" name="Category" placeholder="Category" required>
+        <input type="text" name="Availability" placeholder="Availability" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2 style="text-align:center; margin-top: 20px;">These are some of our products</h2>
+
     <div class="container">
         <div class="product-image">
             <img src="~/Images/Handmade.png" alt="Product Image" width="350" height="250">
@@ -15,7 +124,7 @@
             <h1 class="product-title">Handcrafted Necklace</h1>
             <p class="product-price">R450</p>
             <p class="product-description">This beautiful handcrafted necklace is made with high-quality materials.</p>
-                <p class="product-description">It's perfect for any occasion and makes a great gift.</p>
+            <p class="product-description">It's perfect for any occasion and makes a great gift.</p>
         </div>
     </div>
 
@@ -26,22 +135,22 @@
         <div class="product-info">
             <h1 class="product-title">Handcrafted Bracelet</h1>
             <p class="product-price">R350</p>
-            <p class="product-description">This beautiful handcrafted Bracelet is made with high-quality materials.</p>
+            <p class="product-description">This beautiful handcrafted bracelet is made with high-quality materials.</p>
             <p class="product-description">It's perfect for any occasion and makes a great gift.</p>
         </div>
     </div>
 
-     <div class="container">
+    <div class="container">
         <div class="product-image">
             <img src="~/Images/Handmade3.jpg" alt="Product Image" width="350" height="250">
         </div>
         <div class="product-info">
             <h1 class="product-title">Handcrafted Earring</h1>
             <p class="product-price">R250</p>
-            <p class="product-description">This beautiful handcrafted Earrings is made with high-quality materials.</p>
-            <p class="product-description">It's perfect for any occasion and makes a great gift.</p>
+            <p class="product-description">These beautiful handcrafted earrings are made with high-quality materials.</p>
+            <p class="product-description">They're perfect for any occasion and make a great gift.</p>
         </div>
-    </div> 
+    </div>
 
     <div class="container">
         <div class="product-image">
@@ -50,10 +159,9 @@
         <div class="product-info">
             <h1 class="product-title">Handcrafted Ring</h1>
             <p class="product-price">R250</p>
-            <p class="product-description">This beautiful handcrafted Ring is made with high-quality materials.</p>
+            <p class="product-description">This beautiful handcrafted ring is made with high-quality materials.</p>
             <p class="product-description">It's perfect for any occasion and makes a great gift.</p>
         </div>
     </div>
-
 </body>
-
+</html>
